@@ -23,5 +23,5 @@ admin.site.register(Post, PostAdmin)
 class GroupAdmin(admin.ModelAdmin):
     list_display = ('pk', 'title', 'slug', 'description')
 
-  
+ 
 admin.site.register(Group, GroupAdmin)
