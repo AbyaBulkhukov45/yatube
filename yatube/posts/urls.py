@@ -2,7 +2,6 @@ from django.urls import path
 
 from . import views
 
-# при создании namespace прописываем апп нэйм в урлах прилд
 app_name = 'posts'
 
 urlpatterns = [
