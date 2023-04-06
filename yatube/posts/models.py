@@ -30,7 +30,7 @@ class Post(models.Model):
     author = models.ForeignKey(
         User,
         null=True,
-        on_delete=models.SET_NULL,
+        on_delete=models.CASCADE,
         related_name='posts',
         verbose_name='Автор',
         help_text='Укажите автора поста'
@@ -40,7 +40,7 @@ class Post(models.Model):
         Group,
         null=True,
         blank=True,
-        on_delete=models.CASCADE,
+        on_delete=models.SET_NULL,
         related_name='posts',
         verbose_name='Группа',
         help_text='Укажите группу, к которой относится пост'
